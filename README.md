@@ -1,4 +1,4 @@
-# OSTown v3.3 - Operating System Systems Lab
+# OSTown  - Operating System Systems Lab
 
 A visual, node-based operating system simulator plus a guided, interactive Academy. Wire up a scheduler, CPU (with on-chip caches), MMU, RAM, GPU, caches, buffers, disks, USB, NIC, drivers and containers, run workloads, and watch what happens. No code or assembly is executed; the simulation is behavioural.
 
