@@ -1,0 +1,38 @@
+import type { ReactNode } from 'react';
+const P: Record<string, ReactNode> = {
+  scheduler: <><circle cx="12" cy="12" r="8.5" /><path d="M12 7v5l3.5 2" /><path d="M4 4l2.2 2M20 4l-2.2 2" /></>,
+  cpu: <><rect x="6" y="6" width="12" height="12" rx="2.5" /><rect x="9.5" y="9.5" width="5" height="5" rx="1" /><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3" /></>,
+  mmu: <><rect x="3.5" y="4" width="7" height="7" rx="1.6" /><rect x="13.5" y="4" width="7" height="7" rx="1.6" /><rect x="3.5" y="14" width="7" height="6" rx="1.6" /><path d="M14 17h6M17.5 14l3 3-3 3" /></>,
+  ram: <><rect x="3" y="7" width="18" height="9" rx="1.8" /><path d="M7 7v9M11 7v9M15 7v9M19 7v9" strokeOpacity=".5" /><path d="M6 16v3M10 16v3M14 16v3M18 16v3" /></>,
+  cache: <><path d="M13 3L5 13h6l-1 8 8-10h-6z" /></>,
+  buffer: <><path d="M6 4h12l-1.2 15a2 2 0 01-2 1.8H9.2a2 2 0 01-2-1.8z" /><path d="M6.8 12c2 1.4 3.4-1.4 5.2 0s3.2 1.4 5.2 0" /></>,
+  storage: <><rect x="3.5" y="6" width="17" height="12" rx="3" /><circle cx="8" cy="12" r="1.2" /><path d="M12 12h6" /></>,
+  usb: <><path d="M12 3v14" /><circle cx="12" cy="19" r="2" /><path d="M12 9l-4-2v-2M12 12l4-2v-2" /><rect x="6.5" y="3" width="3" height="2" rx=".5" /><circle cx="16" cy="7.2" r="1.2" /></>,
+  printer: <><path d="M7 9V4h10v5" /><rect x="3.5" y="9" width="17" height="8" rx="2" /><rect x="7" y="14" width="10" height="6" rx="1" /></>,
+  nic: <><circle cx="12" cy="12" r="8.5" /><path d="M3.5 12h17M12 3.5c3 3 3 14 0 17M12 3.5c-3 3-3 14 0 17" /></>,
+  gpu: <><rect x="4" y="7" width="16" height="9" rx="2" /><path d="M8 16v3M16 16v3M5 21h14" /><circle cx="9" cy="11.5" r="1.4" /><circle cx="15" cy="11.5" r="1.4" /></>,
+  driver: <><circle cx="12" cy="12" r="3" /><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1" /></>,
+  container: <><path d="M3 8l9-4 9 4v8l-9 4-9-4z" /><path d="M3 8l9 4 9-4M12 12v8" /></>,
+  task: <><circle cx="12" cy="9" r="3.6" /><path d="M5 20c.8-4 3.6-6 7-6s6.2 2 7 6" /></>,
+  play: <path d="M8 5.5v13l11-6.5z" fill="currentColor" />, pause: <><rect x="7" y="5" width="3.6" height="14" rx="1" fill="currentColor" /><rect x="13.4" y="5" width="3.6" height="14" rx="1" fill="currentColor" /></>,
+  step: <><path d="M6 5.5v13l9-6.5z" fill="currentColor" /><rect x="17" y="5.5" width="2.6" height="13" rx="1" fill="currentColor" /></>,
+  reset: <><path d="M4.5 12a7.5 7.5 0 107.5-7.5H8" /><path d="M10.5 1.8L7.8 4.5l2.7 2.7" /></>,
+  undo: <><path d="M8.5 6L4 10.5 8.5 15" /><path d="M4 10.5h9.5a5 5 0 015 5 5 5 0 01-5 5H8" /></>,
+  redo: <><path d="M15.5 6L20 10.5 15.5 15" /><path d="M20 10.5h-9.5a5 5 0 00-5 5 5 5 0 005 5H16" /></>,
+  sun: <><circle cx="12" cy="12" r="4" /><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2M5.3 5.3l1.4 1.4M17.3 17.3l1.4 1.4M18.7 5.3l-1.4 1.4M6.7 17.3l-1.4 1.4" /></>,
+  moon: <path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z" />,
+  search: <><circle cx="11" cy="11" r="6.5" /><path d="M20 20l-4.2-4.2" /></>,
+  plus: <path d="M12 5v14M5 12h14" />, minus: <path d="M5 12h14" />, trash: <><path d="M5 7h14M10 7V4h4v3M7 7l1 13h8l1-13" /></>,
+  fit: <><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" /></>, chevL: <path d="M15 5l-7 7 7 7" />, chevR: <path d="M9 5l7 7-7 7" />, chevD: <path d="M5 9l7 7 7-7" />, chevU: <path d="M5 15l7-7 7 7" />,
+  book: <><path d="M4 5.5A2.5 2.5 0 016.5 3H20v16H6.5A2.5 2.5 0 004 21.5z" /><path d="M8 7h8M8 11h6" /></>,
+  flag: <><path d="M5 21V4" /><path d="M5 5h12l-2.5 4 2.5 4H5" /></>, bolt: <path d="M13 3L5 13h6l-1 8 8-10h-6z" />,
+  download: <><path d="M12 4v11M7 11l5 5 5-5M5 20h14" /></>, upload: <><path d="M12 16V5M7 9l5-5 5 5M5 20h14" /></>,
+  chart: <><path d="M4 20V5M4 20h16" /><path d="M8 15l3-4 3 2 4-6" /></>, grid: <><rect x="4" y="4" width="7" height="7" rx="1.5" /><rect x="13" y="4" width="7" height="7" rx="1.5" /><rect x="4" y="13" width="7" height="7" rx="1.5" /><rect x="13" y="13" width="7" height="7" rx="1.5" /></>,
+  list: <path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01" />, check: <path d="M5 12.5l4.5 4.5L19 7.5" />, x: <path d="M6 6l12 12M18 6L6 18" />,
+  link: <><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1" /><path d="M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0011 18.7l1-1" /></>,
+  help: <><circle cx="12" cy="12" r="8.5" /><path d="M9.4 9a2.6 2.6 0 015.1.5c0 1.7-2.5 2.1-2.5 3.7M12 16.8h.01" /></>,
+  eye: <><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z" /><circle cx="12" cy="12" r="3" /></>, spark: <path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8zM19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z" />,
+};
+export function Icon({ name, size = 18, stroke = 1.7, className }: { name: string; size?: number; stroke?: number; className?: string }) {
+  return <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={stroke} strokeLinecap="round" strokeLinejoin="round" aria-hidden>{P[name] ?? P.task}</svg>;
+}

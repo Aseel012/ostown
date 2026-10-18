@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /><meta name="theme-color" content="#000000" /><title>OSTown  - OS Systems Lab</title><meta name="description" content="No-code OS system design simulator: scheduling, paging, buffers, devices, Docker." /><link rel="icon" href="/favicon.svg" />
+<script>
+/* Last-resort boot guard: if the app fails before React mounts (for example a
+   corrupted saved canvas), offer recovery instead of a blank page. */
+window.__ostownBootOK = false;
+window.addEventListener('error', function () {
+  setTimeout(function () {
+    if (window.__ostownBootOK || document.querySelector('#root > *')) return;
+    var d = document.createElement('div');
+    d.style.cssText = 'position:fixed;inset:0;background:#000;color:#f4f4f4;display:grid;place-items:center;font:14px system-ui;z-index:9999';
+    d.innerHTML = '<div style="max-width:440px;padding:26px;border:1px solid #2e2e2e;border-radius:14px;background:#0b0b0b">'
+      + '<h2 style="margin:0 0 8px">Something broke while loading</h2>'
+      + '<p style="color:#8c8c8c">The interface hit an error before it could start. You can reload, or reload with a fresh canvas (your saved setup in this browser is cleared).</p>'
+      + '<button onclick="location.reload()" style="padding:9px 14px;border-radius:9px;border:1px solid #2e2e2e;background:#161616;color:#f4f4f4;cursor:pointer">Reload</button> '
+      + '<button onclick="try{localStorage.removeItem(\'ostown.v32\');localStorage.removeItem(\'ostown2.v2\')}catch(e){};location.reload()" style="padding:9px 14px;border-radius:9px;border:1px solid #2e2e2e;background:#fff;color:#000;cursor:pointer">Reload with a fresh canvas</button></div>';
+    document.body.appendChild(d);
+  }, 50);
+}, true);
+</script>
+</head>
+<body><div id="root"></div><script type="module" src="/src/main.tsx"></script></body></html>
