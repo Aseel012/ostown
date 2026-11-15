@@ -5,6 +5,7 @@ import { Topbar, Palette, Inspector, Dock, Coach, Toast, Welcome } from './ui/pa
 import { Academy } from './ui/academy';
 import { ErrorBoundary } from './ui/ErrorBoundary';
 
+
 export default function App() {
   const ui = useStore(() => getUI());
   useEffect(() => { (window as any).__view = view; document.documentElement.dataset.theme = ui.theme; }, [ui.theme]);
